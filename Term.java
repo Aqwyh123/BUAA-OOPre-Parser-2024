@@ -12,7 +12,7 @@ public class Term {
         StringBuilder sb = new StringBuilder();
         for (Factor factor : factors) {
             if (factor instanceof SubExpr) {
-                sb.append("(" + factor.toString() + ")");
+                sb.append("(").append(factor).append(")");
             } else {
                 sb.append(factor.toString());
             }
